@@ -40,7 +40,7 @@ function topLevelFn() {
   }
 
   nestedFn();
-}
+}  
 
 topLevelFn();
 ```
