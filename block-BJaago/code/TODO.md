@@ -66,7 +66,9 @@ sayHi();
 
 ```js
 console.log(arr); // output
+Ans: [1,2,3,4,5,6]
 console.log(username); // output
+Ans:error
 var usename = 'Sam';
 var arr = [1, 2, 3, 4, 5, 6];
 
