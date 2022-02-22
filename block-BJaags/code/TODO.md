@@ -12,7 +12,7 @@ function square(num) {
   return num * num;
 }
 let hundred = square(10);
-console.log(hundred);
+console.log(hund red);
 ```
 
 Create the execution context diagram of the following code line by line.
