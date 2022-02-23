@@ -1,6 +1,31 @@
 1. Create a function by your choice that accepts a callback function.
 
+```js
+
+function some(array ,cb){ 
+  let arr = []
+   for (ele of array){ 
+    arr.push(cb(ele)) 
+    }
+     return arr;
+   }
+
+```
+
 2. Create a function by you choice that returns a function reference.
+
+```js
+
+function divideNumbers(n, cb) {
+  return cb(n);
+}
+
+function divide(n){
+  return n / 5;
+}
+
+divideNumbers(100, divide);
+```
 
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
@@ -9,6 +34,15 @@
 Have `map` return a new array filled with values that are the result of the 'callback' function on each element of the input array.
 
 ```js
+function map(array, cb){
+  let newArr = [];
+  for (let i = 0 ; i < array.length ; i++){
+     newArr[i] = cb(array[i]);
+     
+}
+  return newArr;
+}
+
 // Your code goes here
 
 // Test Your Code
@@ -23,6 +57,14 @@ multiplyByTwo(2); //-> 4
 4. Create a higher-order function called `forEach` taht takes an array and a callback, and runs the callback on each element of the array. `forEach` does not return anything.
 
 ```js
+
+function forEach(arr, cb){
+  newArr = [];
+  for(let i = 0; i < arr.length; i++){
+    newArr.push(cb(arr[i]));
+  }
+  return newArr;
+}
 // Your code goes here
 
 // Test Your Code
@@ -48,4 +90,13 @@ let odd = filter(numbers, function (n) {
   return n % 2 !== 0;
 });
 console.log(odd); // [1,3,5,7,89]
+
+function filter(array,cb){
+  let filterArray = [];
+  for ( let i = 0 ; i < array.length ; i++ ){
+    filterArray.push(cb(array[i]))
+  }
+   return filterArray
+}
+
 ```
