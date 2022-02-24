@@ -11,7 +11,7 @@ function getCounter() {
       changeBy(1);
     },
     decrement: function () {
-      changeBy(-1);
+      changeBy(-1);  
     },
     value: function () {
       return privateCounter;
