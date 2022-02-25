@@ -81,7 +81,7 @@ function storyWriter() {
       return para;
     }
   }
-}
+};
 
 // Test
 let farmLoveStory = storyWriter();
