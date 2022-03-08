@@ -74,7 +74,7 @@ function objOfMatchesWithArray(array1, array2, callback) {
 
     return acc;
   }, {});
-};
+}
 
 // TEST
 console.log(
